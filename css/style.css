@@ -77,15 +77,17 @@ header .navbar ul li a::before {
 
 header .navbar ul li a:hover::before {
   width: 100%;
-  left: 0;
+  left: 10px;
 }
 
 header .navbar ul li a.active::before {
   width: 100%;
   left: 0;
 }
+
 .home {
-  min-height: 130vh;
+  min-height: 100px;
+  max-height: 1195px;
   background-image: url(../images/bg.jpg);
   background-position: center;
   background-size: cover;
