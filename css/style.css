@@ -46,7 +46,6 @@ header .navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
 header .navbar ul li {
@@ -66,18 +65,18 @@ header .navbar ul li a {
 
 header .navbar ul li a::before {
   content: '';
-  height: 4px;
+  height: 3px;
   background-color: white;
   width: 0%;
   position: absolute;
-  right: 0px;
-  bottom: -5px;
+  right: 1px;
+  bottom: -4px;
   transition: all .5s ease;
 }
 
 header .navbar ul li a:hover::before {
   width: 100%;
-  left: 10px;
+  left: 0px;
 }
 
 header .navbar ul li a.active::before {
@@ -124,7 +123,7 @@ header .navbar ul li a.active::before {
 .home .home-content .block h1 {
   color: white;
   font-size: 100px;
-  font-weight: 6 00;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
@@ -158,3 +157,212 @@ header .navbar ul li a.active::before {
   background-color: white;
   color: black;
 }
+
+.about-me {
+  padding: 100px 15px 200px;
+}
+
+.about-me .section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+
+.about-me .section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: black;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-me .section-title h1::before {
+  content: '';
+  left: 0;
+  height: 4px;
+  position: absolute;
+  right: 35%;
+  background-color: #febd01;
+  bottom: 0;
+  padding-left: 70px;
+}
+
+.about-me .section-title p.small {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #838383;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding-left: 300px;
+}
+
+.about-me .about-content .img img {
+  width: 100%;
+  display: block;
+  height: 500px;
+  width: 500px;
+}
+
+.about-me .about-content .text {
+  flex: 0 55%;
+  max-width: 66.66%;
+  padding-left: 200px;
+}
+
+.about-me .about-content .text h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 15px;
+  color: black;
+
+}
+
+.about-me .about-content .text h6 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 15px;
+  color: black;
+}
+
+.about-me .about-content .text p {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 0 15px;
+  color: black;
+  margin: 0 0 20px;
+}
+
+.about-me .about-content .text h6 span {
+  color: #febd01;
+}
+
+
+.about-me .about-content .text .list label {
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+}
+
+
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me .about-content .text .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.about-me .about-content .text .list p {
+  margin: 0;
+}
+
+.about-me .about-content .text .social {
+  padding-top: 50px;
+}
+
+.about-me .about-content .text a {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid black;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 1px;
+}
+
+.about-me .about-content .text a .fa {
+  color: white;
+  font-size: 15px;
+}
+
+.education .section-title {
+  min-height: 100px;
+  max-height: 1195px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  padding-top: 100px;
+  
+}
+
+.education .section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: black;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.education .section-title h1::before {
+  content: '';
+  left: 0;
+  height: 4px;
+  position: absolute;
+  right: 0%;
+  background-color: #febd01;
+  bottom: 0;
+  padding-left: 70px;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 0px 300px;
+  width: 1500px;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 65%;
+  width: 2px;
+  height: 100%;
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+  box-sizing: border-box; 
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+}
+
+
